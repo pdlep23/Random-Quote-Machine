@@ -1,0 +1,20 @@
+h1, p, body{
+  background-color:darkslateblue;
+  color: white;
+  text-align: center;
+}
+
+.flex-container {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  right: 200px;
+  bottom: 100px;
+  height: 120px;
+
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: solid 1px;
+  text-align: center;
+  vertical-align: middle;
+}
