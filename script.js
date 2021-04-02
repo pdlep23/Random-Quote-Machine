@@ -31,14 +31,14 @@ function generateRandomQuote() {
   return quotes[randomIndex];
 }
 
-$(document).ready(function(){
-  var txt1 = $("<p></p>").text("");
-  txt1.attr("id","quote");
-  txt1.hide();
-  $(".flex-container").append(txt1);
+$(document).ready(function(){//when the document is ready
+  var txt1 = $("<p></p>").text("");//create paragraph
+  txt1.attr("id","quote");//add the attr
+  txt1.hide();//hide the text
+  $(".flex-container").append(txt1);//add it to the div
 });
 
-$("#getQuoteBtn").on("click", function() {
-  $("p").show();   
-  $("p").text(generateRandomQuote());
+$("#getQuoteBtn").on("click", function() {//when the button is click
+  $("p").show();   //show paragraph
+  $("p").text(generateRandomQuote());//generate quote
 });
