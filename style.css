@@ -1,20 +1,24 @@
-h1, p, body{
+html, body, p, .flex-container{
   background-color:darkslateblue;
   color: white;
   text-align: center;
 }
 
-.flex-container {
-  position: absolute;
-  top: 200px;
-  left: 200px;
-  right: 200px;
-  bottom: 100px;
-  height: 120px;
+#getQuoteBtn {
+  margin-top: 20%;
+  background-color: white;
+  color: darkslateblue;
+  border-color: white;
+  border-radius: 10px;
+}
 
+#quote {
+  width: 60%; 
+  margin-top: 1%;
   border-radius: 10px;
   padding: 0.5rem;
   border: solid 1px;
   text-align: center;
-  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
 }

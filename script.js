@@ -31,6 +31,14 @@ function generateRandomQuote() {
   return quotes[randomIndex];
 }
 
-$(document).ready(function() {
+$(document).ready(function(){
+  var txt1 = $("<p></p>").text("");
+  txt1.attr("id","quote");
+  txt1.hide();
+  $(".flex-container").append(txt1);
+});
+
+$("#getQuoteBtn").on("click", function() {
+  $("p").show();   
   $("p").text(generateRandomQuote());
 });
